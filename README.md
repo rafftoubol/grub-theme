@@ -26,8 +26,7 @@ and so on to create your own_
 
 ```Bash
 Git clone github.org/rafftoubol/grub-theme/{theme-name}
-cd ..
-cp or mv {theme-name} /boot/grub/themes/
+sudo cp -r ../{theme-name} /boot/grub/themes/
 
 ```
 
