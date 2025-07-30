@@ -41,3 +41,4 @@ desktop-color: "#0A0F1C"
   
   text = "Boot: %d"
 }
+
