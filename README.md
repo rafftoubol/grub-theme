@@ -20,18 +20,26 @@ and so on to create your own_
 
 ## Installation
 
-1. Clone the repo
+1. Clone the repo & move to the right location
+   > [!INFO]
+   > if you prefer to sym-link just do that, I wont put the steps here because I do not prefer it
 
 ```Bash
 Git clone github.org/rafftoubol/grub-theme/{theme-name}
+cd ..
+cp or mv {theme-name} /boot/grub/themes/
+
 ```
+
+> [!TIP]
+> If you dont have the destination directory (/themes/) just create it
 
 ---
 
 2. edit _*/etc/default/grub*_
 
 ```Bash
-GRUB_THEME="{path to the theme}/theme.txt"
+GRUB_THEME="/boot/grub/themes/{theme-name}/theme.txt"
 GRUB_GFXMODE="3200x2000" ###Or Whatever your resolution is
 ```
 
