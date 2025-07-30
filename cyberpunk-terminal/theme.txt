@@ -1,0 +1,43 @@
+# Simple Cyberpunk Terminal GRUB Theme
+# Optimized for 16:10 3.2K displays (3200x2000)
+# Menu positioned in top-left corner
+
+# Theme metadata
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#0A0F1C"
+
+# Boot menu positioned in top-left corner
++ boot_menu {
+  # Top-left positioning for 3.2K 16:10 display
+  left = 8%
+  top = 15%
+  width = 35%
+  height = 40%
+  
+  # Font styling to match cyberpunk terminal
+  item_font = "DejaVu Sans Mono 18"
+  item_color = "#00FFCC"                    # Cyan to match terminal glow
+  selected_item_color = "#FF6B35"           # Orange accent for selection
+  
+  # Spacing for high-res readability
+  item_height = 40
+  item_padding = 12
+  item_spacing = 8
+}
+
+# Progress bar for boot timeout
++ progress_bar {
+  id = "__timeout__"
+  left = 8%
+  top = 60%
+  width = 35%
+  height = 8
+  
+  font = "DejaVu Sans Mono 14"
+  text_color = "#00FFCC"
+  fg_color = "#FF6B35"        # Orange progress fill
+  bg_color = "#1A2332"        # Dark background
+  
+  text = "Boot: %d"
+}
